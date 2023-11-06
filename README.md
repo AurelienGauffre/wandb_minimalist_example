@@ -9,7 +9,7 @@ To use this project, you will need the following:
 - PyTorch
 - torchvision
 - wandb
-- OmegaConf
+- OmegaConf (use to simply convert a yaml config file into a python object where attributes being the parameters, instead of using a python dict, ie. we can use config.lr instead of config['lr'])
 
 Install the necessary packages using pip:
 
