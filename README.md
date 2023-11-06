@@ -36,7 +36,7 @@ For a hyperparameter sweep, prepare a config_sweep.yaml file. Here's a brief exa
 ```bash
 python train.py --config config_sweep.yaml
 ```
-** The string'sweep'has to be inside the config sweep file name for the training script to know that it should use a sweep run.**
+**The string 'sweep' has to be inside the config sweep file name for the training script to know that it should use a sweep run.**
 
 
 ## Additional Resources
