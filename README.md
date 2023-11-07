@@ -4,12 +4,11 @@ This repo demonstrates a simple example on how to use Weights & Biases (wandb) f
 
 ## Prerequisites
 
-To use this project, you will need the following:
-- Python 3.6+
-- PyTorch
+To run this project, you will need Python 3.6+ with the following libraries :
+- torch
 - torchvision
 - wandb
-- OmegaConf (use to simply convert a yaml config file into a python object where attributes being the parameters, instead of using a python dict, ie. we can use config.lr instead of config['lr'])
+- omegaconf : it's used to simply convert a yaml config file into a python object (instead of using a python dict) which allows for example to write config.lr (instead of config['lr'])
 
 Install the necessary packages using pip:
 
