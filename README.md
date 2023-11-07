@@ -1,6 +1,6 @@
 # CIFAR-10 Training Showcase with Weights & Biases
 
-This project demonstrates how to use Weights & Biases (wandb) for managing and tracking machine learning experiments. You will find a `train.py` script in this repository, which is designed to train a modified ResNet-18 model on the CIFAR-10 dataset with full integration of wandb for logging and sweeps.
+This repo demonstrates a simple example on how to use Weights & Biases (wandb) for managing and tracking machine learning experiments. You will find a `train.py` script in this repository, which is designed to train a ResNet-18 model on the CIFAR-10 dataset with full integration of wandb for logging and sweeps. 
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ pip install torch torchvision wandb omegaconf
 Create an account on Weights & Biases and set up the wandb CLI on your machine.
 
 
-## Wandb Classical run 
+## Wandb classical run 
 
 To start a standard training run with your configuration:
 
@@ -31,14 +31,16 @@ python train.py --config config.yaml
 
 ## Wandb Sweep run 
 
-For a hyperparameter sweep, prepare a config_sweep.yaml file. Here's a brief example:
+For a hyperparameter sweep, use the config_sweep.yaml file instead :
 
 ```bash
 python train.py --config config_sweep.yaml
 ```
-**The string 'sweep' has to be inside the config sweep file name for the training script to know that it should use a sweep run.**
+**As it's implemented in train.py, the string 'sweep' has to be inside the config sweep file name for the training script to know that it should use a sweep run.** This allows some flexibility by using the same script train.py for both classical trainning with wandb or wandb sweeps.
 
 
 ## Additional Resources
-For a detailed explanation of wandb sweeps, refer to the official wandb documentation : https://docs.wandb.ai/guides/sweeps
+For a detailed explanation see the official doc of wandb :
+* quick start with wandb : https://docs.wandb.ai/quickstart
+* sweeps : https://docs.wandb.ai/guides/sweeps
 
